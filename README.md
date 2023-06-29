@@ -14,3 +14,5 @@ $ sudo make install || su -c "make install"
 $ cd git-open
 $ sudo make uninstall || su -c "make uninstall"
 ```
+### TODO:
+- Stdout if success or failure?
