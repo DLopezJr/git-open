@@ -16,3 +16,4 @@ $ sudo make uninstall || su -c "make uninstall"
 ```
 ### TODO:
 - Stdout if success or failure?
+- Find if and where the git config file is.
