@@ -2,7 +2,7 @@
 
 git ls-remote --get-url \
 | awk '
-/.*/ { 
+($0 ~ /.*/) { 
 	gsub(/:[[:digit:]]+/, ""); 
 	sub(/^ssh:\/\//, ""); 
 	gsub(/:/, "/"); 
