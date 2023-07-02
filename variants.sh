@@ -33,7 +33,7 @@ git ls-remote --get-url \
 # Switch to awk. Better readability. Uses ERE instead of BRE.
 git ls-remote --get-url \
 | awk '
-/.*/ { 
+($0 ~ /.*/) { 
 	gsub(/:[[:digit:]]+/, ""); 
 	sub(/^ssh:\/\//, ""); 
 	gsub(/:/, "/"); 
